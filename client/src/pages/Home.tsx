@@ -278,7 +278,9 @@ export default function Home() {
               <p className="text-sm text-foreground/70" style={{ fontFamily: '"Lato", sans-serif' }}>
                 Ready to transform your leadership pipeline?
               </p
-                
+              <p className="text-sm text-foreground/70" style={{ fontFamily: "'Lato', sans-serif" }}>
+              <a href="tel:+14085982650" className="text-primary hover:underline">(408) 598-2650</a>
+              </p> 
               
               
               
