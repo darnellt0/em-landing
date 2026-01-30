@@ -93,6 +93,10 @@ const FORGE_BASE_URL =
 const MAPS_PROXY_URL = `${FORGE_BASE_URL}/v1/maps/proxy`;
 
 function loadMapScript() {
+  if (!API_KEY) {
+    console.warn("VITE_FRONTEND_FORGE_API_KEY is not defined. Map will not load.");
+    return Promise.resolve(null);
+  }
   return new Promise(resolve => {
     const script = document.createElement("script");
     script.src = `${MAPS_PROXY_URL}/maps/api/js?key=${API_KEY}&v=weekly&libraries=marker,places,geocoding,geometry`;
@@ -129,6 +133,10 @@ export function MapView({
     await loadMapScript();
     if (!mapContainer.current) {
       console.error("Map container not found");
+      return;
+    }
+    if (!window.google?.maps) {
+      console.warn("Google Maps API not loaded.");
       return;
     }
     map.current = new window.google.maps.Map(mapContainer.current, {
