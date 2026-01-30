@@ -295,12 +295,14 @@ export default function Home() {
           <p className="text-lg mb-8 leading-relaxed opacity-90" style={{ fontFamily: '"Lato", sans-serif' }}>
             The path to securing your high-performing women of color is clear. Authorize your preferred tier to initiate the Statement of Work and lock in the Q2 delivery date.
           </p>
-          <Button
-            size="lg"
-            className="bg-accent text-accent-foreground hover:bg-accent/90 transition-all duration-500 px-8"
-          >
-            Get Started <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
+          <a href="#contact">
+            <Button
+              size="lg"
+              className="bg-accent text-accent-foreground hover:bg-accent/90 transition-all duration-500 px-8"
+            >
+              Get Started <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          </a>
         </div>
       </section>
 
