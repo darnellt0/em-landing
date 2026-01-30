@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { ArrowRight, CheckCircle2, Mail, Phone, MapPin } from "lucide-react";
 import { useState } from "react";
 
 /**
@@ -63,12 +63,14 @@ export default function Home() {
             <a href="#tiers" className="text-sm text-foreground hover:text-primary transition-colors duration-500" style={{ fontFamily: '"Lato", sans-serif' }}>
               Options
             </a>
-            <Button
-              className="bg-primary text-primary-foreground hover:bg-accent transition-colors duration-500"
-              size="sm"
-            >
-              Contact
-            </Button>
+            <a href="#contact">
+              <Button
+                className="bg-primary text-primary-foreground hover:bg-accent transition-colors duration-500"
+                size="sm"
+              >
+                Contact
+              </Button>
+            </a>
           </div>
         </div>
       </nav>
@@ -233,6 +235,53 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Contact Section */}
+      <section id="contact" className="py-20 md:py-32 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="text-sm font-bold tracking-widest text-accent uppercase mb-4" style={{ fontFamily: '"Lato", sans-serif' }}>
+              Get in Touch
+            </h2>
+            <h3 className="text-4xl md:text-5xl font-bold text-primary mb-6" style={{ fontFamily: '"Playfair Display", serif' }}>
+              Start the Conversation
+            </h3>
+            <p className="text-lg text-foreground/70 leading-relaxed" style={{ fontFamily: '"Lato", sans-serif' }}>
+              Ready to transform your leadership pipeline? Reach out to discuss which partnership tier aligns with your organizational goals.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div className="bg-secondary/5 p-8 rounded-lg border border-border text-center group hover:border-primary transition-all duration-500">
+              <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-500">
+                <Mail className="h-6 w-6" />
+              </div>
+              <h4 className="text-xl font-bold mb-2" style={{ fontFamily: '"Playfair Display", serif' }}>Email</h4>
+              <p className="text-foreground/70" style={{ fontFamily: '"Lato", sans-serif' }}>
+                <a href="mailto:hello@elevatedmovements.com" className="hover:text-primary transition-colors">hello@elevatedmovements.com</a>
+              </p>
+            </div>
+
+            <div className="bg-secondary/5 p-8 rounded-lg border border-border text-center group hover:border-primary transition-all duration-500">
+              <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-500">
+                <Phone className="h-6 w-6" />
+              </div>
+              <h4 className="text-xl font-bold mb-2" style={{ fontFamily: '"Playfair Display", serif' }}>Phone</h4>
+              <p className="text-foreground/70" style={{ fontFamily: '"Lato", sans-serif' }}>
+                <a href="tel:+14085982650" className="hover:text-primary transition-colors">(408) 598-2650</a>
+              </p>
+            </div>
+
+            <div className="bg-secondary/5 p-8 rounded-lg border border-border text-center group hover:border-primary transition-all duration-500">
+              <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-500">
+                <MapPin className="h-6 w-6" />
+              </div>
+              <h4 className="text-xl font-bold mb-2" style={{ fontFamily: '"Playfair Display", serif' }}>Location</h4>
+              <p className="text-foreground/70" style={{ fontFamily: '"Lato", sans-serif' }}>Available Nationwide</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 md:py-32 bg-primary text-primary-foreground border-t border-border">
         <div className="container max-w-3xl mx-auto px-4 text-center">
@@ -268,7 +317,7 @@ export default function Home() {
               <ul className="space-y-2 text-sm">
                 <li><a href="#partnership" className="text-foreground/70 hover:text-primary transition-colors duration-300">Partnership</a></li>
                 <li><a href="#tiers" className="text-foreground/70 hover:text-primary transition-colors duration-300">Options</a></li>
-                <li><a href="#" className="text-foreground/70 hover:text-primary transition-colors duration-300">Contact</a></li>
+                <li><a href="#contact" className="text-foreground/70 hover:text-primary transition-colors duration-300">Contact</a></li>
               </ul>
             </div>
             <div>
