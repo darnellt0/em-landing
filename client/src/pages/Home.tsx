@@ -277,7 +277,7 @@ export default function Home() {
               <h4 className="font-bold text-foreground mb-4">Get in Touch</h4>
               <p className="text-sm text-foreground/70" style={{ fontFamily: '"Lato", sans-serif' }}>
                 Ready to transform your leadership pipeline?
-              </p
+              </p>
               <p className="text-sm text-foreground/70" style={{ fontFamily: "'Lato', sans-serif" }}>
               <a href="tel:+14085982650" className="text-primary hover:underline">(408) 598-2650</a>
               </p> 
