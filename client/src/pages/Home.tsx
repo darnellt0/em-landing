@@ -277,7 +277,11 @@ export default function Home() {
               <h4 className="font-bold text-foreground mb-4">Get in Touch</h4>
               <p className="text-sm text-foreground/70" style={{ fontFamily: '"Lato", sans-serif' }}>
                 Ready to transform your leadership pipeline?
-              </p>
+              </p
+                
+              
+              
+              
             </div>
           </div>
           <div className="border-t border-border pt-8 text-center text-sm text-foreground/60" style={{ fontFamily: '"Lato", sans-serif' }}>
@@ -285,6 +289,8 @@ export default function Home() {
           </div>
         </div>
       </footer>
+      
     </div>
   );
 }
+/
