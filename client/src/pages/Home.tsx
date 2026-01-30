@@ -1,4 +1,3 @@
-import { useAuth } from "@/_core/hooks/useAuth";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { useState } from "react";
@@ -48,7 +47,6 @@ const tiers = [
 
 export default function Home() {
   const [hoveredTier, setHoveredTier] = useState<number | null>(null);
-  const { user, loading, error, isAuthenticated, logout } = useAuth();
 
   return (
     <div className="min-h-screen bg-background text-foreground">
