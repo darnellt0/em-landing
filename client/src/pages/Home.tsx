@@ -98,19 +98,23 @@ export default function Home() {
             Reverse asset depreciation among high-performing women of color with evidence-based Gallup Strengths coaching.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              size="lg"
-              className="bg-primary text-primary-foreground hover:bg-accent transition-all duration-500 px-8"
-            >
-              Explore Partnership <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-primary text-primary hover:bg-primary/5 transition-all duration-500"
-            >
-              Learn More
-            </Button>
+            <a href="#tiers">
+              <Button
+                size="lg"
+                className="bg-primary text-primary-foreground hover:bg-accent transition-all duration-500 px-8 w-full sm:w-auto"
+              >
+                Explore Partnership <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </a>
+            <a href="#partnership">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-primary text-primary hover:bg-primary/5 transition-all duration-500 w-full sm:w-auto"
+              >
+                Learn More
+              </Button>
+            </a>
           </div>
         </div>
       </section>
