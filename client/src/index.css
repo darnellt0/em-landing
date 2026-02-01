@@ -46,23 +46,23 @@
 }
 
 :root {
-  /* Elegant Restraint Color Palette */
-  --primary: #5a4a42; /* Warm taupe */
-  --primary-foreground: #f5f1e8; /* Cream */
-  --secondary: #a8b5a0; /* Soft sage */
-  --secondary-foreground: #2c2c2c; /* Dark charcoal */
-  --accent: #6b4423; /* Deep burgundy */
-  --accent-foreground: #f5f1e8; /* Cream */
-  --sidebar-primary: #5a4a42;
-  --sidebar-primary-foreground: #f5f1e8;
-  --chart-1: #a8b5a0;
-  --chart-2: #5a4a42;
-  --chart-3: #6b4423;
+  /* Luxury Editorial Design System */
+  --primary: #202120; /* Deep Charcoal - Authoritative */
+  --primary-foreground: #fdfcf9; /* Soft Cream - Premium */
+  --secondary: #B6A27F; /* Muted Gold - Excellence */
+  --secondary-foreground: #202120; /* Deep Charcoal */
+  --accent: #5a4a42; /* Warm Taupe - Sophistication */
+  --accent-foreground: #fdfcf9; /* Soft Cream */
+  --sidebar-primary: #202120;
+  --sidebar-primary-foreground: #fdfcf9;
+  --chart-1: #B6A27F;
+  --chart-2: #202120;
+  --chart-3: #5a4a42;
   --chart-4: #8b6f47;
   --chart-5: #c9a961;
-  --radius: 0.5rem;
-  --background: #f5f1e8;
-  --foreground: #2c2c2c;
+  --radius: 0rem; /* Sharp corners for executive feel */
+  --background: #fdfcf9; /* Soft Cream Background */
+  --foreground: #202120; /* Deep Charcoal Text */
   --card: #ffffff;
   --card-foreground: #2c2c2c;
   --popover: #ffffff;

@@ -51,21 +51,21 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border">
-        <div className="container flex items-center justify-between h-16">
-          <div className="text-2xl font-bold text-primary" style={{ fontFamily: '"Playfair Display", serif' }}>
-            Elevated Movements
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border/50">
+        <div className="container flex items-center justify-between h-20">
+          <div className="text-xl font-bold text-primary tracking-tighter" style={{ fontFamily: '"Playfair Display", serif' }}>
+            Elevated <span className="text-secondary">Movements</span>
           </div>
-          <div className="flex items-center gap-8">
-            <a href="#partnership" className="text-sm text-foreground hover:text-primary transition-colors duration-500" style={{ fontFamily: '"Lato", sans-serif' }}>
+          <div className="flex items-center gap-10">
+            <a href="#partnership" className="text-xs font-bold tracking-[0.2em] uppercase text-foreground/60 hover:text-primary transition-all duration-500" style={{ fontFamily: '"Lato", sans-serif' }}>
               Partnership
             </a>
-            <a href="#tiers" className="text-sm text-foreground hover:text-primary transition-colors duration-500" style={{ fontFamily: '"Lato", sans-serif' }}>
+            <a href="#tiers" className="text-xs font-bold tracking-[0.2em] uppercase text-foreground/60 hover:text-primary transition-all duration-500" style={{ fontFamily: '"Lato", sans-serif' }}>
               Options
             </a>
             <a href="#contact">
               <Button
-                className="bg-primary text-primary-foreground hover:bg-accent transition-colors duration-500"
+                className="bg-primary text-primary-foreground hover:bg-secondary hover:text-secondary-foreground transition-all duration-700 rounded-none px-6 text-xs font-bold tracking-widest uppercase"
                 size="sm"
               >
                 Contact
@@ -77,45 +77,60 @@ export default function Home() {
 
       {/* Hero Section */}
       <section
-        className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden"
-        style={{
-          backgroundImage: "url('/images/hero-background.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
+        className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-primary"
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-background/70 to-background/40" />
-        <div className="relative container max-w-3xl mx-auto px-4 text-center">
-          <div className="mb-6 inline-block">
-            <span className="text-sm font-semibold text-accent tracking-widest uppercase" style={{ fontFamily: '"Lato", sans-serif' }}>
+        {/* Atmospheric Background with Parallax-like Depth */}
+        <div 
+          className="absolute inset-0 opacity-40 mix-blend-overlay"
+          style={{
+            backgroundImage: "url('/images/hero-background.jpg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            transform: "scale(1.1)",
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-primary/80 via-primary/40 to-primary/90" />
+        
+        <div className="relative container max-w-4xl mx-auto px-4 text-center">
+          <div className="mb-8 inline-block animate-fade-in">
+            <span className="text-xs font-bold text-secondary tracking-[0.4em] uppercase" style={{ fontFamily: '"Lato", sans-serif' }}>
               Strategic Partnership
             </span>
           </div>
-          <h1 className="text-6xl md:text-7xl font-bold text-primary mb-6 leading-tight" style={{ fontFamily: '"Playfair Display", serif' }}>
-            Stop the Talent Drain
+          
+          <h1 className="text-7xl md:text-8xl font-bold text-primary-foreground mb-8 leading-[1.1] tracking-tight" style={{ fontFamily: '"Playfair Display", serif' }}>
+            Stop the <br className="hidden md:block" />
+            <span className="italic font-medium text-secondary">Talent Drain</span>
           </h1>
-          <p className="text-xl md:text-2xl text-foreground/80 mb-8 leading-relaxed max-w-2xl mx-auto" style={{ fontFamily: '"Lato", sans-serif' }}>
+          
+          <p className="text-xl md:text-2xl text-primary-foreground/70 mb-12 leading-relaxed max-w-2xl mx-auto font-light" style={{ fontFamily: '"Lato", sans-serif' }}>
             Reverse asset depreciation among high-performing women of color with evidence-based Gallup Strengths coaching.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#tiers">
+          
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+            <a href="#tiers" className="w-full sm:w-auto">
               <Button
                 size="lg"
-                className="bg-primary text-primary-foreground hover:bg-accent transition-all duration-500 px-8 w-full sm:w-auto"
+                className="bg-secondary text-secondary-foreground hover:bg-secondary/90 transition-all duration-700 px-10 py-7 text-sm font-bold tracking-widest uppercase rounded-none w-full sm:w-auto border border-secondary"
               >
                 Explore Partnership <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </a>
-            <a href="#partnership">
+            <a href="#partnership" className="w-full sm:w-auto">
               <Button
                 size="lg"
                 variant="outline"
-                className="border-primary text-primary hover:bg-primary/5 transition-all duration-500 w-full sm:w-auto"
+                className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground hover:text-primary transition-all duration-700 px-10 py-7 text-sm font-bold tracking-widest uppercase rounded-none w-full sm:w-auto"
               >
                 Learn More
               </Button>
             </a>
           </div>
+        </div>
+        
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-30">
+          <div className="w-[1px] h-12 bg-primary-foreground" />
         </div>
       </section>
 
