@@ -92,7 +92,7 @@ export default function Home() {
             </span>
           </div>
           <h1 className="text-6xl md:text-7xl font-bold text-primary mb-6 leading-tight" style={{ fontFamily: '"Playfair Display", serif' }}>
-            Securing Human Capital
+            Stop the Talent Drain
           </h1>
           <p className="text-xl md:text-2xl text-foreground/80 mb-8 leading-relaxed max-w-2xl mx-auto" style={{ fontFamily: '"Lato", sans-serif' }}>
             Reverse asset depreciation among high-performing women of color with evidence-based Gallup Strengths coaching.
@@ -128,10 +128,10 @@ export default function Home() {
                 The Strategic Imperative
               </h2>
               <p className="text-lg text-foreground/80 mb-6 leading-relaxed" style={{ fontFamily: '"Lato", sans-serif' }}>
-                High-performing women of color are a critical, high-value asset within your organization's leadership pipeline. Yet systemic burnout is creating an unacceptable risk of talent flight.
+                Your leadership pipeline is leaking its most valuable assets. When burnout hits your high-performing women of color, you don't just lose a leader—you lose institutional knowledge, cultural impact, and up to $2.25M in replacement costs.
               </p>
               <p className="text-lg text-foreground/80 mb-8 leading-relaxed" style={{ fontFamily: '"Lato", sans-serif' }}>
-                The Elevated Movements B2B Partnership, anchored by Shria's certification as a <span className="font-bold text-accent">Gallup Strengths Coach</span>, provides the superior, asset-based framework necessary to institutionalize Rest and Intention as core leadership infrastructure.
+                The Elevated Movements B2B Partnership, anchored by Shria's certification as a <span className="font-bold text-accent">Gallup Strengths Coach</span>, bridges that gap by institutionalizing Rest as a performance metric, not a luxury.
               </p>
               <div className="space-y-4">
                 <div className="flex gap-3 items-start">
@@ -300,7 +300,7 @@ export default function Home() {
               size="lg"
               className="bg-accent text-accent-foreground hover:bg-accent/90 transition-all duration-500 px-8"
             >
-              Get Started <ArrowRight className="ml-2 h-4 w-4" />
+              Secure Your Q2 Delivery Date <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </a>
         </div>
